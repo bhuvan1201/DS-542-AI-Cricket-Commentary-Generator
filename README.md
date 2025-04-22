@@ -48,4 +48,37 @@ This component of the project focuses on generating cricket commentary using Ope
 4. Adjust frame sampling intervals or prompt text as needed.
 
 
+
+### API Setup
+
+To run the GPT-based commentary generation notebooks, you'll need access to the OpenAI GPT-4o (or GPT-4o-mini) Vision API. Follow the steps below to get started:
+
+#### 1. Get an OpenAI API Key
+
+- Go to [https://platform.openai.com/signup](https://platform.openai.com/signup) and create an account (or log in if you already have one).
+- Navigate to your [API Keys page](https://platform.openai.com/account/api-keys).
+- Click **Create new secret key** and copy the key (starts with `sk-...`).
+
+#### 2. Add Payment Method
+
+To use GPT-4o with vision (image) inputs, you need to upgrade from the free-tier trial:
+
+- Visit [Billing → Overview](https://platform.openai.com/account/usage) on your OpenAI account.
+- Add a **payment method**.
+- Choose one of the following:
+  - **Pay-as-you-go**: You're billed based on how many tokens and image inputs you use.
+  - **Prepaid credits**: You can buy credits in advance (e.g., \$5, \$10, \$20) and your usage is deducted from that balance.
+
+> **Note:** GPT-4o vision usage can be token-heavy when many frames are sent. Start with small clips and increase as needed.
+
+#### 3. Use the API Key in Code
+
+Once you have your API key, insert it in your notebook like this:
+
+```python
+import openai
+
+client = openai.OpenAI(api_key="YOUR_OPENAI_API_KEY")
+
+
 ---

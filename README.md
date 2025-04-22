@@ -14,6 +14,7 @@ This component of the project focuses on generating cricket commentary using Ope
 | `ablation_test_single_event.ipynb`   | Performs an **ablation study** to test how many frames are actually needed to generate meaningful commentary for a single event. It compares performance when sampling every 25th, 30th, 40th, up to 100th frame. |
 
 
+
 #### Approach
 
 1. **Frame Extraction**: Videos are read using OpenCV and converted to base64-encoded frames.
@@ -25,6 +26,7 @@ This component of the project focuses on generating cricket commentary using Ope
 4. **Model Inference**: Frames are sent to the `gpt-4o` or `gpt-4o-mini` model with a `max_tokens` cap, and the generated commentary is printed.
 
 
+
 #### Key Features and Experiments
 
 - **Event Differentiation**: Multiple-events prompt tells the model to segment input into separate deliveries and respond accordingly.
@@ -32,6 +34,7 @@ This component of the project focuses on generating cricket commentary using Ope
 - **Prompt Variants Tested**:
   - `"These are frames of a video. Create a voiceover commentary..."` (Single event)
   - `"This video contains multiple cricket deliveries. Number the responses..."` (Multiple events)
+
 
 
 #### How to Use

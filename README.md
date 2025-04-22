@@ -1,11 +1,11 @@
-## Part - 1
+# Part - 1
 
-### Commentary Generation with GPT-4o
+## Commentary Generation with GPT-4o
 
 This component of the project focuses on generating cricket commentary using OpenAI's GPT-4o vision model. By providing selected video frames from highlight clips, the model generates human-like, event-specific cricket voiceovers that mimic real-time commentators.
 
 
-#### Notebooks Overview
+### Notebooks Overview
 
 | Notebook                             | Purpose                                                                                     |
 |--------------------------------------|---------------------------------------------------------------------------------------------|
@@ -15,7 +15,7 @@ This component of the project focuses on generating cricket commentary using Ope
 
 
 
-#### Approach
+### Approach
 
 1. **Frame Extraction**: Videos are read using OpenCV and converted to base64-encoded frames.
 2. **Sampling**: Depending on the use case, every Nth frame is sampled (e.g., 30th frame for single event, or varying intervals for ablation).
@@ -27,7 +27,7 @@ This component of the project focuses on generating cricket commentary using Ope
 
 
 
-#### Key Features and Experiments
+### Key Features and Experiments
 
 - **Event Differentiation**: Multiple-events prompt tells the model to segment input into separate deliveries and respond accordingly.
 - **Frame Sampling Tradeoff**: The ablation test helps optimize the number of frames to send, balancing quality vs. API cost.
@@ -37,7 +37,7 @@ This component of the project focuses on generating cricket commentary using Ope
 
 
 
-#### How to Use
+### How to use
 
 1. Upload a `.mov` cricket video to your working directory.
 2. Update the `VideoCapture("your_video.mov")` path in the notebook.

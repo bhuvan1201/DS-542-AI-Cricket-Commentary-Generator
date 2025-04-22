@@ -76,7 +76,6 @@ To use GPT-4o with vision (image) inputs, you need to upgrade from the free-tier
 Once you have your API key, insert it in your notebook like this:
 
 ```python
-import openai
 
 client = openai.OpenAI(api_key="YOUR_OPENAI_API_KEY")
 

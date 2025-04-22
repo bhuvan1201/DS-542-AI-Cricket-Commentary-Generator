@@ -1,3 +1,5 @@
+## Part - 1
+
 ### Commentary Generation with GPT-4o
 
 This component of the project focuses on generating cricket commentary using OpenAI's GPT-4o vision model. By providing selected video frames from highlight clips, the model generates human-like, event-specific cricket voiceovers that mimic real-time commentators.

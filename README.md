@@ -4,7 +4,6 @@
 
 This component of the project focuses on generating cricket commentary using OpenAI's GPT-4o vision model. By providing selected video frames from highlight clips, the model generates human-like, event-specific cricket voiceovers that mimic real-time commentators.
 
----
 
 #### Notebooks Overview
 
@@ -14,7 +13,6 @@ This component of the project focuses on generating cricket commentary using Ope
 | `gpt_model_multiple_events.ipynb`    | Tests commentary generation for **multiple deliveries** in one video. It uses the stronger `gpt-4o` model and prompts it to identify and generate **separate commentaries per ball** from the continuous frame stream. |
 | `ablation_test_single_event.ipynb`   | Performs an **ablation study** to test how many frames are actually needed to generate meaningful commentary for a single event. It compares performance when sampling every 25th, 30th, 40th, up to 100th frame. |
 
----
 
 #### Approach
 
@@ -26,7 +24,6 @@ This component of the project focuses on generating cricket commentary using Ope
    - Number responses for multiple events.
 4. **Model Inference**: Frames are sent to the `gpt-4o` or `gpt-4o-mini` model with a `max_tokens` cap, and the generated commentary is printed.
 
----
 
 #### Key Features and Experiments
 
@@ -36,7 +33,6 @@ This component of the project focuses on generating cricket commentary using Ope
   - `"These are frames of a video. Create a voiceover commentary..."` (Single event)
   - `"This video contains multiple cricket deliveries. Number the responses..."` (Multiple events)
 
----
 
 #### How to Use
 
@@ -47,3 +43,6 @@ This component of the project focuses on generating cricket commentary using Ope
    - Sample frames
    - Generate commentary using GPT-4o
 4. Adjust frame sampling intervals or prompt text as needed.
+
+
+---

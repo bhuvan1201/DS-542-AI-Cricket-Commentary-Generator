@@ -1,5 +1,28 @@
 # Part - 1
 
+## Event Detection model
+
+The Python script `sceneDetect.py` processes a cricket highlights video to automatically detect key event transitions, such as wickets, boundaries, or major action scenes. It uses a lightweight and efficient method based on frame-to-frame pixel difference.
+
+### Approach
+
+1.	Loads the video using OpenCV and retrieves its frame rate and total number of frames.
+2.	Converts each frame to grayscale for efficient processing.
+3.	Computes frame difference scores between consecutive frames to detect visual changes.
+4.	Identifies timestamps where a significant scene change (event) occurs, based on:
+* Top 5% visual difference (threshold_percentile)
+* Minimum 3 seconds gap between events to avoid duplicates (min_gap_seconds)
+5.	Prints timestamps of detected events in seconds.
+
+### How to use
+
+1.	Place your cricket video in the same directory as the script and update the video_path.
+2.	Run the script:
+   `python detect_events.py`
+
+
+# Part - 2
+
 ## Commentary Generation with GPT-4o
 
 This component of the project focuses on generating cricket commentary using OpenAI's GPT-4o vision model. By providing selected video frames from highlight clips, the model generates human-like, event-specific cricket voiceovers that mimic real-time commentators.

@@ -103,3 +103,4 @@ Once you have your API key, insert it in your notebook like this:
 client = openai.OpenAI(api_key="YOUR_OPENAI_API_KEY")
 
 
+# Part 3

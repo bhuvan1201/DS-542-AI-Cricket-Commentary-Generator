@@ -122,7 +122,7 @@ The Python script `tts_gtts_generate.ipynb` processes the generated cricket comm
 - **Lightweight Integration:** No need for GPU or large local models — speech synthesis happens via simple API calls.
 - **Fast Prototyping:** Enables quick testing of commentary audibility and fluency.
 - **Language Support:** gTTS supports multiple languages; English was used for this project.
-- Limitations
+- Limitations:
    - Static Voice: gTTS provides a default static voice (typically female for English) with no emotional modulation.
    - Limited Expressiveness: The generated audio lacks pitch variations and excitement, which are often desirable in sports commentary.
 

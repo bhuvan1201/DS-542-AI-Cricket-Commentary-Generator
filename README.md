@@ -108,7 +108,7 @@ client = openai.OpenAI(api_key="YOUR_OPENAI_API_KEY")
 
 ## Text-to-Speech Conversion with gTTS
 
-The Python script `tts_gtts_generate.py` processes the generated cricket commentary text and automatically converts it into spoken audio files. It uses the lightweight and efficient Google Text-to-Speech (gTTS) library to synthesize human-like speech, producing .mp3 audio clips ready to be merged with highlight videos.
+The Python script `tts_gtts_generate.ipynb` processes the generated cricket commentary text and automatically converts it into spoken audio files. It uses the lightweight and efficient Google Text-to-Speech (gTTS) library to synthesize human-like speech, producing .mp3 audio clips ready to be merged with highlight videos.
 
 ### Approach
 
@@ -133,7 +133,7 @@ The Python script `tts_gtts_generate.py` processes the generated cricket comment
    pip install gTTS
    ````
 2. Prepare the commentary text output generated from the GPT-4o model.
-3. Use the provided `tts_gtts_generate.py` script (or a Jupyter notebook) to:
+3. Use the provided `tts_gtts_generate.ipynb` script (or a Jupyter notebook) to:
    - Input the commentary text.
    - Generate corresponding `.mp3` audio files using gTTS.
    - Save the files in the desired output directory.

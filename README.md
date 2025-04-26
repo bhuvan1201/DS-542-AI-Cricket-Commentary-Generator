@@ -102,5 +102,10 @@ Once you have your API key, insert it in your notebook like this:
 
 client = openai.OpenAI(api_key="YOUR_OPENAI_API_KEY")
 
+# Part - 3
 
----
+## Text-to-Speech Conversion with gTTS
+
+This component of the project focuses on converting the generated cricket commentary text into spoken audio using Google Text-to-Speech (gTTS). The gTTS library provides a simple and efficient way to synthesize human-like speech from text using Google's cloud-based TTS service.
+
+The synthesized audio clips can later be combined with the highlight videos to create a fully narrated cricket viewing experience.

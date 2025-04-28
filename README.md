@@ -128,14 +128,10 @@ The Python script `tts_gtts_generate.ipynb` processes the generated cricket comm
 
 ### How to use 
 
-1. Install the gTTS library if not already installed:
-   ```python
-   pip install gTTS
-   ````
-2. Prepare the commentary text output generated from the GPT-4o model.
-3. Use the provided `tts_gtts_generate.ipynb` script (or a Jupyter notebook) to:
+1. Prepare the commentary text output generated from the GPT-4o model.
+2. Use the provided `tts_gtts_generate.ipynb` script (or a Jupyter notebook) to:
    - Input the commentary text.
    - Generate corresponding `.mp3` audio files using gTTS.
    - Save the files in the desired output directory.
-4. Optionally, batch-process multiple commentary lines to generate a complete set of event audio files.
+3. Optionally, batch-process multiple commentary lines to generate a complete set of event audio files.
       

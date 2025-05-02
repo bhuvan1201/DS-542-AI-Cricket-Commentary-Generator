@@ -11,8 +11,8 @@ This project develops independent modules toward automating cricket commentary g
 The input data for this project consisted of cricket highlight videos screen-recorded from publicly available sources such as YouTube. Each video typically captured short gameplay sequences (~10-20 seconds) showcasing individual deliveries or key moments like boundaries or wickets.
 
 These clips were used across multiple components of the project:
-	- Event Detection Model: To identify and segment discrete cricketing events using motion-based frame analysis.
-	- GPT-4o Commentary Model: The same segmented clips were processed using OpenCV to extract frames, which were then passed to the GPT-4o Vision model for generating cricket-style commentary.
+* Event Detection Model: To identify and segment discrete cricketing events using motion-based frame analysis.
+* GPT-4o Commentary Model: The same segmented clips were processed using OpenCV to extract frames, which were then passed to the GPT-4o Vision model for generating cricket-style commentary.
 
 This consistent use of data ensured alignment across the pipeline stages and enabled targeted testing of model performance on specific cricketing events.
 

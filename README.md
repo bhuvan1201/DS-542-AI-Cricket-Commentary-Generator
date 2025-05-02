@@ -16,6 +16,7 @@ These clips were used across multiple components of the project:
 
 This consistent use of data ensured alignment across the pipeline stages and enabled targeted testing of model performance on specific cricketing events.
 
+
 ## Setup
 
 To set up this project locally, ensure you have **Python 3.8+** installed. Then follow the steps below to create a virtual environment and install the required dependencies.
@@ -46,6 +47,22 @@ python -m venv .venv
 # Upgrade pip and install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+
+## Repository Structure
+```text
+.
+├── GPT_Models/                         # GPT-based commentary generation notebooks
+│   ├── 1_gpt_model_single_event.ipynb      # GPT-4o Mini: Commentary for single delivery
+│   ├── 2_gpt_model_multiple_events.ipynb   # GPT-4o: Commentary for multiple deliveries
+│   └── 3_ablation_test_single_event.ipynb  # Ablation study: Frame sampling impact
+├── 1_sceneDetect.py                    # Event detection using frame differencing
+├── 2_tts_gtts_generate.ipynb           # Convert commentary to speech using gTTS
+├── 3_requirements.txt                  # Python dependencies
+├── 542_final_report_main.pdf           # Final written report (LaTeX generated)
+├── DS542_final_presentation.pptx       # Final presentation slides
+├── README.md                           # Project overview and usage instructions
 ```
 
 

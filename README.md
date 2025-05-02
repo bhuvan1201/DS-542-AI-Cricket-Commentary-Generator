@@ -1,5 +1,54 @@
 # DL4DS AI-Powered Cricket Commentary: Event Detection, GPT-4o Narration, and gTTS Synthesis 
 
+
+## Overview
+
+This project develops independent modules toward automating cricket commentary generation. In this work, we focus on generating cricket commentary using OpenAI’s GPT-4o vision model by passing sampled video frames to produce event-specific textual narrations. The generated commentary is further synthesized into speech using the gTTS model, setting the groundwork for a future end-to-end automated cricket broadcasting system.
+
+
+## Data 
+
+The input data for this project consisted of cricket highlight videos screen-recorded from publicly available sources such as YouTube. Each video typically captured short gameplay sequences (~10-20 seconds) showcasing individual deliveries or key moments like boundaries or wickets.
+
+These clips were used across multiple components of the project:
+	•	Event Detection Model: To identify and segment discrete cricketing events using motion-based frame analysis.
+	•	GPT-4o Commentary Model: The same segmented clips were processed using OpenCV to extract frames, which were then passed to the GPT-4o Vision model for generating cricket-style commentary.
+
+This consistent use of data ensured alignment across the pipeline stages and enabled targeted testing of model performance on specific cricketing events.
+
+## Setup
+
+To set up this project locally, ensure you have **Python 3.8+** installed. Then follow the steps below to create a virtual environment and install the required dependencies.
+
+### For macOS and Linux
+```bash
+# Create a virtual environment
+python3 -m venv .venv
+
+# Activate the virtual environment
+source .venv/bin/activate
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### For Windows
+```bash
+# Create a virtual environment
+python -m venv .venv
+
+# Activate the virtual environment
+.venv\Scripts\activate
+
+# Upgrade pip and install dependencies
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+
 ## Part - 1
 
 ### Event Detection model
@@ -80,9 +129,9 @@ To run the GPT-based commentary generation notebooks, you'll need access to the 
 
 1. Get an OpenAI API Key
 
-- Go to [https://platform.openai.com/signup](https://platform.openai.com/signup) and create an account (or log in if you already have one).
-- Navigate to your [API Keys page](https://platform.openai.com/account/api-keys).
-- Click **Create new secret key** and copy the key (starts with `sk-...`).
+   - Go to [https://platform.openai.com/signup](https://platform.openai.com/signup) and create an account (or log in if you already have one).
+   - Navigate to your [API Keys page](https://platform.openai.com/account/api-keys).
+   - Click **Create new secret key** and copy the key (starts with `sk-...`).
 
 2. Add Payment Method
 
